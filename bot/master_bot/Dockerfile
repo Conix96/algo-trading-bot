@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM python:3.11-slim
 
 # Set a working directory
 WORKDIR /master
@@ -11,4 +11,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY ./bot/master_bot /master
 
 # Command to run the master bot
-CMD ["python", "master_bot.py"]
+CMD ["python", "-u", "master_bot.py"]

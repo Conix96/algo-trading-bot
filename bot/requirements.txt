@@ -1,4 +1,4 @@
-python-binance
+binance-connector
 redis
 pandas
 pydantic
